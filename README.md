@@ -1,6 +1,26 @@
-# D1 starter
+# Tile Clicker
 
-A minimal TypeScript/Vite browser project with Deno checks and GitHub Pages deployment.
+A tiny idle game for CMPM 121: tap the tile, buy helpers, and watch the pile
+grow. Built with TypeScript and Vite on the D1 starter.
+
+## Play
+
+- Click (or keyboard-activate) the big tile to earn one tile.
+- Spend tiles in **Helpers** on Hand polish (more per click), Auto-tiler and
+  Kiln (tiles per second).
+- Progress saves to `localStorage`; **Reset save** starts over.
+- Helpers keep earning while the tab is hidden, and up to 8 hours of production
+  is credited when you come back.
+
+## Run
+
+```sh
+deno task dev     # http://localhost:3000
+deno task ci      # format check, lint, type check, build
+deno task build   # production build in dist/
+```
+
+Pushing to `main` deploys `dist/` to GitHub Pages.
 
 ## Credits
 
